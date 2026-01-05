@@ -41,4 +41,5 @@ This is a small React project demonstrating **basic React concepts** including `
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/chuks2274/react-dom-fundamentals.git
+cd react-dom-fundamentals
