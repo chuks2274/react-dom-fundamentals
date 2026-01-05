@@ -12,7 +12,7 @@ const removeItem = () => {
 }
 return(
     <div className="container">
-    <h1>List Item</h1>
+    <h1>Item List</h1>
     <ul>
         {items.map((items, index) => (
             <li key={index}>{items}</li>
