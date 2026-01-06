@@ -89,6 +89,32 @@ This stylesheet provides **global styling and layout** for the React demo applic
 - Demonstrates event handling, useState, and dynamic rendering
 - Cat images are displayed at a uniform size for a clean UI
 
+### 14. React Testing with Jest & Testing Library
+
+This project demonstrates unit and integration testing in a React + TypeScript application using Jest and React Testing Library.
+
+#### Redux Todo Component
+
+- Renders the Redux-powered Todo UI
+- Adds a new todo via user interaction
+- Uses @reduxjs/toolkit and react-redux provider
+
+#### Context API Todo Component
+
+- Renders todos from React Context
+- Verifies addTodo is called on button click
+- Uses a mocked Context Provider for isolation
+
+#### FetchDemo Component
+
+- Renders the fetch UI
+- Mocks API requests using axios
+- Confirms fetched data is displayed correctly
+
+### 15. CI/CD – Vercel Deployment
+
+This project uses GitHub Actions to implement a CI/CD pipeline that automatically tests and deploys the application to Vercel.
+
 ---
 
 ## How to Run

@@ -24,16 +24,20 @@ body {
   max-width: 400px;
   margin: 2rem auto;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 /* =========================
    TYPOGRAPHY
 ========================= */
-h1 {
+h1, h2 {
   text-align: center;
   margin-bottom: 1rem;
   color: #333;
-  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 label {
@@ -98,11 +102,13 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
   outline: none;
 }
+
 form .btn {
   margin: 0.5rem auto;
   padding: 0.5rem 1.25rem;
   width: auto;
 }
+
 /* =========================
    LIST
 ========================= */
@@ -178,19 +184,11 @@ nav ul li a:hover {
 }
 
 /* =========================
-   RESPONSIVE
+   TODO COMPONENT
 ========================= */
-@media (max-width: 500px) {
-  .container {
-    padding: 1.5rem;
-  }
-}
-
-
-/* Container for both todos */
 .todo-container {
   max-width: 400px;
-  margin: 50px auto; /* center vertically with some spacing */
+  margin: 50px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 12px;
@@ -198,54 +196,43 @@ nav ul li a:hover {
   font-family: Arial, sans-serif;
 }
 
-/* Heading */
-.todo-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Input + button group */
 .input-group {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
-  flex-wrap: wrap; /* wrap on small screens */
+  flex-wrap: wrap;
 }
 
-/* Input field */
 .input-group input {
-  flex: 1; /* take remaining space */
+  flex: 1;
   padding: 10px 12px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  min-width: 0; /* prevents shrinking below 0 on small screens */
+  min-width: 0;
 }
 
-/* Add button */
 .input-group .btn {
   padding: 10px 16px;
   font-size: 16px;
   border: none;
-  background-color: #4f46e5;
+  background-color: #007bff;
   color: white;
   border-radius: 8px;
   cursor: pointer;
-  flex-shrink: 0; /* keep button from shrinking */
+  flex-shrink: 0;
 }
 
 .input-group .btn:hover {
-  background-color: #4338ca;
+  background-color: #0056b3;
 }
 
-/* Error message */
 .error {
   color: red;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Todo list */
 .todo-list {
   list-style: none;
   padding: 0;
@@ -261,7 +248,6 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
-/* Remove button */
 .remove-btn {
   padding: 4px 8px;
   font-size: 14px;
@@ -276,23 +262,9 @@ nav ul li a:hover {
   background-color: #dc2626;
 }
 
-/* Responsive adjustments */
-@media (max-width: 480px) {
-  .input-group input {
-    font-size: 18px;
-    padding: 12px;
-  }
-
-  .input-group .btn {
-    flex: 1; /* button takes full width below input if wrapped */
-  }
-
-  .input-group {
-    flex-direction: column; /* stack input + button on small screens */
-  }
-}
-
-
+/* =========================
+   FETCH / AXIOS DEMO
+========================= */
 .fetch-container {
   max-width: 400px;
   margin: 50px auto;
@@ -317,11 +289,9 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
-.error {
-  color: red;
-  margin-bottom: 10px;
-}
-
+/* =========================
+   RANDOM CAT DEMO
+========================= */
 .cat-image-container {
   margin-top: 20px;
   display: flex;
@@ -329,16 +299,38 @@ nav ul li a:hover {
 }
 
 .cat-image {
-  width: 300px;        /* fixed width */
-  height: 300px;       /* fixed height */
+  width: 300px;
+  height: 300px;
   border-radius: 12px;
-  object-fit: cover;   /* ensures image fills the box without distortion */
+  object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 500px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 480px) {
+  .input-group input {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .input-group .btn {
+    flex: 1;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
   .cat-image {
-    width: 90%;       /* scale down on small screens */
+    width: 90%;
     height: 200px;
   }
 }
