@@ -185,3 +185,160 @@ nav ul li a:hover {
     padding: 1.5rem;
   }
 }
+
+
+/* Container for both todos */
+.todo-container {
+  max-width: 400px;
+  margin: 50px auto; /* center vertically with some spacing */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input + button group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+/* Input field */
+.input-group input {
+  flex: 1; /* take remaining space */
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 0; /* prevents shrinking below 0 on small screens */
+}
+
+/* Add button */
+.input-group .btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0; /* keep button from shrinking */
+}
+
+.input-group .btn:hover {
+  background-color: #4338ca;
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Remove button */
+.remove-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+  color: white;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .input-group input {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .input-group .btn {
+    flex: 1; /* button takes full width below input if wrapped */
+  }
+
+  .input-group {
+    flex-direction: column; /* stack input + button on small screens */
+  }
+}
+
+
+.fetch-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  background: #e0e7ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.cat-image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cat-image {
+  width: 300px;        /* fixed width */
+  height: 300px;       /* fixed height */
+  border-radius: 12px;
+  object-fit: cover;   /* ensures image fills the box without distortion */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+  .cat-image {
+    width: 90%;       /* scale down on small screens */
+    height: 200px;
+  }
+}

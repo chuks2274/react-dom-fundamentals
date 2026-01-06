@@ -13,6 +13,9 @@ const Nav = () => {
         <li><Link to="/item">Item</Link></li>
         <li><Link to="/show">Show/Hide</Link></li>
         <li><Link to="/word">Word Toggle</Link></li>
+        <li><Link to="/fetch-demo">Fetch / Axios Demo</Link></li>
+        <li><Link to="/redux-todo">Redux Todo</Link></li>
+        <li><Link to="/context-todo">Context Todo</Link></li>
       </ul>
     </nav>
   );

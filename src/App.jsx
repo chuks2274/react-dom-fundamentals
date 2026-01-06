@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReduxTodo from "./reduxTodo/Todo";
+import ContextTodo from "./contextTodo/Todo";
+import { TodoProvider } from "./contextTodo/TodoContext";
 import Nav from "./components/Nav/Nav";
 import Counter from "./components/Counter/Counter";
 import Parent from "./components/CounterWithProps/Parent";
@@ -8,6 +11,8 @@ import List from "./components/List/List";
 import Show from "./components/Show/Show";
 import Word from "./components/Word/Word";
 import Item from "./components/List/Item";
+import FetchDemo from "./components/fetchDemo/FetchDemo";
+
 
 const App = () => {
   return (
@@ -26,6 +31,9 @@ const App = () => {
             <Route path="/item" element={<Item />} />
             <Route path="/show" element={<Show />} />
             <Route path="/word" element={<Word />} />
+            <Route path="/fetch-demo" element={<FetchDemo />} />
+            <Route path="/redux-todo" element={<ReduxTodo />} />
+            <Route path="/context-todo" element={<TodoProvider><ContextTodo /></TodoProvider>} />
           </Routes>
         </div>
       </div>

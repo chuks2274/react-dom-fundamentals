@@ -64,6 +64,31 @@ This stylesheet provides **global styling and layout** for the React demo applic
 - Custom modern scrollbar
 - Basic responsive design for small screens
 
+### 11. Context API + TypeScript Todo
+
+- Simple todo app built with React Context API and TypeScript
+- Add and remove todos
+- Input validation prevents empty todos
+- Todos persist across page reloads using sessionStorage
+- Demonstrates state management without Redux
+
+### 12. Redux + TypeScript Todo
+
+- Simple todo app built with Redux Toolkit and TypeScript
+- Add and remove todos
+- Input validation prevents empty todos
+- Todos persist across page reloads using sessionStorage
+- Demonstrates state management with Redux using useSelector and useDispatch
+
+### 13. Random Cat Generator
+
+- Fetches a random cat image from The Cat API
+- Uses Axios to request data from the API
+- Displays a new cat image every time the user clicks the button
+- Handles loading and error states
+- Demonstrates event handling, useState, and dynamic rendering
+- Cat images are displayed at a uniform size for a clean UI
+
 ---
 
 ## How to Run
