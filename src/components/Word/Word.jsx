@@ -9,6 +9,7 @@ const toggleWord = () => {
 
     return(
         <div className="container">
+        <h2>Toggle Message</h2>
      <h1>{word}</h1>
      <button className="btn" onClick={toggleWord}>Toggle Message</button>
         </div>

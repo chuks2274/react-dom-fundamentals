@@ -8,6 +8,7 @@ const toggleMessage = () => {
 }
 return(
      <div className="container">
+        <h2>Show/Hide Message</h2>
         {message && <h1>Hello World!</h1>}
         <button className="btn" onClick={toggleMessage}>Toggle Message</button>
      </div>
