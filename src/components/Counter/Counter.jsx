@@ -14,7 +14,7 @@ const Counter = () => {
 
     return(
         <div className="container">
-            <h2>Counter</h2> 
+            
             <h1>{count}</h1>
             <div className="btn-group">
                 <button className="btn" onClick={increment}>+</button>
