@@ -334,3 +334,29 @@ nav ul li a:hover {
     height: 200px;
   }
 }
+
+
+/* =========================
+   APP LAYOUT
+========================= */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 1rem;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .input-group .btn {
+    flex: none;
+    width: auto;
+    align-self: center;
+  }
+}

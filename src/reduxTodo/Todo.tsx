@@ -10,7 +10,7 @@ const Todo = () => {
   const todos = useSelector((state: RootState) => state.todo.todos);
   const dispatch = useDispatch<AppDispatch>();
 
-  // ✅ Load once from sessionStorage before first render
+  // Load once from sessionStorage before first render
   useEffect(() => {
     const stored = sessionStorage.getItem("reduxTodos");
     if (stored) {
@@ -25,7 +25,7 @@ const Todo = () => {
     }
   }, [dispatch]);
 
-  // ✅ Save whenever todos change
+  // Save whenever todos change
   useEffect(() => {
     if (todos.length >= 0) {
       sessionStorage.setItem("reduxTodos", JSON.stringify(todos));

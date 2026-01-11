@@ -13,14 +13,13 @@ import Word from "./components/Word/Word";
 import Item from "./components/List/Item";
 import FetchDemo from "./components/fetchDemo/FetchDemo";
 
-
 const App = () => {
   return (
     <Router>
-      <div style={{ display: "flex" }}>
+      <div className="app-layout">
         <Nav />
 
-        <div style={{ padding: "1rem", flex: 1 }}>
+        <div className="content">
           <Routes>
             <Route path="/" element={<h2>Welcome! Select a demo from the menu.</h2>} />
             <Route path="/counter" element={<Counter />} />
@@ -33,7 +32,11 @@ const App = () => {
             <Route path="/word" element={<Word />} />
             <Route path="/fetch-demo" element={<FetchDemo />} />
             <Route path="/redux-todo" element={<ReduxTodo />} />
-            <Route path="/context-todo" element={<TodoProvider><ContextTodo /></TodoProvider>} />
+            <Route path="/context-todo" element={
+              <TodoProvider>
+                <ContextTodo />
+              </TodoProvider>
+            } />
           </Routes>
         </div>
       </div>
