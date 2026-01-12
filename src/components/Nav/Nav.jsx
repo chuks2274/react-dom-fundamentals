@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className="nav">
-      <h3>React DOM Demos</h3>
+      <h3>React DOM Fundamentals</h3>
       <ul className="nav-list">
         <li><Link to="/counter">Counter</Link></li>
         <li><Link to="/counter-props">Counter with Props</Link></li>
